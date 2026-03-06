@@ -1,2 +1,2 @@
 # LC-Cookbook
-A cookbook for myself that breaks down the Leetcode problems I've done, what the first instinct was, and what the better solution is. Meant to assist in learning patterns, following brute force instincts to elegant, patterned solutions.
+A cookbook for myself that breaks down the Leetcode problems I've done, what the first instinct was, and what the better solution is. Meant to assist in learning patterns, following brute force instincts to elegant, patterned solutions. For clarification, all problems are first done and submitted on Leetcode, and then I try to optimize and submit better answers. After I finish with the question, I then seek the best examples of all solutions, and then copy them to this repo for study and reference.
