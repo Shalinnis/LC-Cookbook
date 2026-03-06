@@ -1,0 +1,17 @@
+#Brute force / intuition:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        answer = 0                                  #variable to hold the greatest amount of wealth
+        for i in range(len(accounts)):              #iterate through each account
+            accountwealth = accounts[i][0]          #set account wealth check to hold first value
+            for j in range(1,len(accounts[i])):     #iterate through each column for that account row
+                accountwealth += accounts[i][j]     #add all the columns together for the account
+            if accountwealth > answer:              #check to see if accountwealth is greater than answer given
+                answer = accountwealth              #if so, set answer to it
+        return answer                               #return highest accountwealth
+
+#Optimized solution(use max, sum to determine answers):
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        answer = 0                          #set variable to hold answer
+        for i in accounts:                  #iterate through the different accounts
+            answer = max(answer, sum(i))    #set answer to higher number, existing answer or sum of iterated columns
+        return answer                       #return richest amount
